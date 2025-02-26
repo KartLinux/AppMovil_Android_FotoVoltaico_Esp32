@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:id="@+id/btnLedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encender LED" />
+
+    <Button
+        android:id="@+id/btnLedOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Apagar LED" />
+
+    <TextView
+        android:id="@+id/textViewSensorData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esperando datos del sensor..."
+        android:textSize="18sp"
+        android:padding="16dp" />
+    <TextView
+        android:id="@+id/textViewUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esperando datos del gps..."
+        android:textSize="18sp"
+        android:padding="16dp" />
+    <Button
+        android:id="@+id/btnSendServoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo Automàtico" />
+    <!-- Joystick personalizado -->
+    <com.example.fotovoltaico_esp32.JoystickView
+        android:id="@+id/joystickView"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+</LinearLayout>
+

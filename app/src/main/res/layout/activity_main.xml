@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar a ESP32"
+        android:background="@drawable/gradient_background"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Estado: Desconectado"
+        android:textColor="#00FFFF" />
+    <Button
+        android:id="@+id/btnFuncionesEsp32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Funciones ESP32"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btnGetLocationAndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener datos de Ubicaciòn"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/teal_700"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvConnectionReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESP32-Bluetooth\n- Servo X en el pin 5\n- Servo Y en el pin 18\n-SENSOR_TOP_Norte: 34\n-SENSOR_BOTTOM_Sur: 35\n-SENSOR_LEFT_Oeste: 32\n-SENSOR_RIGHT_Este: 33"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvSensorPins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="ESP32-WIFI\nConfiguración de pines:\n- Pin 34: Lectura divisor\n- Pin 32: Sensor de corriente\n- Pin 33: Luz\n- I2C_SDA: Pin 21\n- I2C_SCL: Pin 22\n- Sensor: BME280\n- SSID: NETLIFE-KAIFUKU\n -Pass: 0989211814\n\n-Pin 4: Lavadora\n-Pin 5: Secadora\n-Pin 13: Refrigeradora\n-Pin 14: Microondas\n-Pin 15: Television_1\n-Pin 16: Television_2\n-Pin 17: Equipo de Sonido\n-Pin 18: Ducha\n-Pin 19: Focos"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

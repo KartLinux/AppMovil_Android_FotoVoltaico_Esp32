@@ -1,0 +1,28 @@
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="1500"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite">
+
+    <layer-list>
+        <item>
+            <shape android:shape="oval">
+                <stroke
+                    android:width="2dp"
+                    android:color="#80FFFFFF"
+                    android:dashWidth="4dp"
+                    android:dashGap="8dp"/>
+            </shape>
+        </item>
+        <item android:top="20dp" android:bottom="20dp">
+            <shape android:shape="line">
+                <stroke
+                    android:width="1dp"
+                    android:color="#00FFFF"
+                    android:dashWidth="8dp"
+                    android:dashGap="4dp"/>
+            </shape>
+        </item>
+    </layer-list>
+</animated-rotate>

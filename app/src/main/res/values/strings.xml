@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Foto Esp32</string>
+    <string name="title_activity_funciones_esp32">FuncionesEsp32Activity</string>
+    <string name="title_activity_automatic_mode_pane_led">AutomaticModePaneLedActivity</string>
+</resources>
