@@ -10,14 +10,30 @@
   <h1 style="font-size: 36px; font-weight: bold; color: #00ff00; text-align: center; text-transform: uppercase; letter-spacing: 2px;">
     📱 APP MÓVIL PARA CONTROL DE ESP32 CON BLUETOOTH ⚡
   </h1>
-
   <!-- Descripción del proyecto -->
   <div style="background-color: #282c34; color: #abb2bf; padding: 20px; border-radius: 10px; margin: 20px 0;">
     <p style="font-size: 18px; text-align: center;">
-      Esta aplicación móvil desarrollada en Kotlin permite controlar un ESP32 mediante Bluetooth. La app incluye un joystick para mover servomotores manualmente y un botón para activar el modo automático, donde el ESP32 toma el control. Además, solicita permisos de ubicación (aunque no se usan actualmente).
+      Esta aplicación móvil desarrollada en Kotlin permite controlar un ESP32 mediante Bluetooth. La app incluye un joystick para mover servomotores manualmente y un botón para activar el modo automático, donde el ESP32 toma el control. Además, solicita permisos de ubicación.
     </p>
   </div>
-
+  <!-- Imágen del proyecto arquitectura -->
+  <h2 style="font-size: 24px; font-weight: bold; color: #ff4500; text-align: center; margin-top: 30px;">
+    Arquitectura del Proyecto e Imagenes de la App
+  </h2>
+  <div style="text-align: center; margin: 20px 0;">
+    <table style="margin: 0 auto; border-collapse: collapse;">
+      <tr>
+        <td><img src="https://github.com/user-attachments/assets/410d32f9-9da1-4e8b-966f-613e8608ee4a" width="300" style="border: 2px solid #ccc; border-radius: 10px;" /></td>
+        <td><img src="https://github.com/user-attachments/assets/bce5e53c-6e86-4582-a969-165d680df7e6" width="300" style="border: 2px solid #ccc; border-radius: 10px;" /></td>
+        <td><img src="https://github.com/user-attachments/assets/1edb9ab4-0809-477c-8fb2-56674bba5d0d" width="300" style="border: 2px solid #ccc; border-radius: 10px;" /></td>
+      </tr>
+      <tr>
+        <td style="text-align: center; color: #00ff00; font-size: 14px;">Arquitectura</td>
+        <td style="text-align: center; color: #00ff00; font-size: 14px;">Pantalla Inicio App</td>
+        <td style="text-align: center; color: #00ff00; font-size: 14px;">Pantalla Funciones App</td>
+      </tr>
+    </table>
+  </div>
   <!-- Imágenes del proyecto -->
   <h2 style="font-size: 24px; font-weight: bold; color: #ff4500; text-align: center; margin-top: 30px;">
     🖼️ IMÁGENES DE LAS TECNOLOGIA USADAS
@@ -47,7 +63,7 @@
       <li><span style="color: #00ff00;">📱 Interfaz intuitiva:</span> Joystick para control manual de servos.</li>
       <li><span style="color: #00ff00;">🤖 Modo automático:</span> Activa el control automático en el ESP32.</li>
       <li><span style="color: #00ff00;">🔗 Conexión Bluetooth:</span> Se conecta al ESP32 con el nombre <code>ROOT_ESP32</code>.</li>
-      <li><span style="color: #00ff00;">📍 Permiso de ubicación:</span> Solicita permisos de ubicación (no se usan).</li>
+      <li><span style="color: #00ff00;">📍 Permiso de ubicación:</span> Solicita permisos de ubicación.</li>
     </ul>
   </div>
 
